@@ -73,8 +73,23 @@ function deleteField(event) {
 
     // delete field
     span.parentNode.remove();
-
 }
+
+// yes or no to add orphanage
+function toggleSelect(event) {
+    // remove .active class (buttons)
+    document.querySelectorAll('.button-select button').forEach(button => button.classList.remove('active'));
+
+    // add .active class to clicked button
+    const button = event.currentTarget;
+    button.classList.add('active');
+
+    // update input hidden to selected value
+    const input = document.querySelector('[name="open_on_weekends"]');
+
+    input.value = button.dataset.value;
+}
+
 
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', )
 //     .addTo(map);
