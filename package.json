@@ -1,0 +1,26 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "![nlw - happy](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6db6fcb6-7c26-4595-8b97-f42c6669f11c%2FComponent_1.png?table=block&id=ce58c482-80d3-4d24-9656-565eabc5397f&width=2540&userId=&cache=v2)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vczoika/-nlw-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vczoika/-nlw-/issues"
+  },
+  "homepage": "https://github.com/vczoika/-nlw-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.5",
+    "sqlite-async": "^1.1.0"
+  }
+}

@@ -16,12 +16,12 @@ main {
     background: white;
     border: 1px solid #d3e2e5;
 
-    border-radius: 2.4rem;   
+    border-radius: 2.4rem;
 
     overflow: hidden;
 }
 
-.orphanage-details > img {
+.orphanage-details>img {
     width: 100%;
     height: 30rem;
     object-fit: cover;
@@ -49,7 +49,7 @@ main {
     transition: opacity 0.2s;
 }
 
-.images button:hover, 
+.images button:hover,
 .images button.active {
     opacity: 1;
 }
@@ -101,10 +101,11 @@ main {
 
 .open-details {
     margin-top: 2.4rem;
-    
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
+    line-height: 1.5;
 }
 
 .open-details div {
@@ -125,10 +126,17 @@ main {
 }
 
 .open-details .open-on-weekends {
+    border-radius: 20px;
+}
+
+.open-on-weekends.open {
     background: linear-gradient(160deg, #edfff6 1%, white 92%);
     border: 1px solid #b3dae2;
-    border-radius: 20px;
-
     color: #37c77f;
 }
 
+.open-on-weekends.closed {
+    background: linear-gradient(160deg, #fcf0f4 1%, white 92%);
+    border: 1px solid #ffbcd4;
+    color: #ff999d;
+}

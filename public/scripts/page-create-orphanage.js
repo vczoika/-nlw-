@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 
 //create icon
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68]
 });
@@ -90,6 +90,15 @@ function toggleSelect(event) {
     input.value = button.dataset.value;
 }
 
+function validate(event) {
+    //validate of lat lng 
+    const validateLatLng = document.querySelector('[name=lat, name=lng]').value
+
+    if (validateLatLng == "") {
+        event.preventDefault()
+        alert('Verifique o mapa!')
+    }
+}
 
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', )
 //     .addTo(map);
